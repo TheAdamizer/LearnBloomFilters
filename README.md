@@ -40,7 +40,7 @@ hashingFunctions[0](100, 'some string to hash');
 ```
 
 Keep working to meet the specified tests.  If you need more clarification on what the tests are looking for, click on the 
-specific requirement in SpecRunner.html and it will show you the mocha tests that need to pass.
+specific requirement in SpecRunner.html and it will show you the mocha tests that need to pass.  
 ![Expanded requirement](http://i.imgur.com/fhd377j.png)
 
 Keep coding away and you'll start to see some green.  Eventually you'll have a SpecRunner.html that looks like this:
