@@ -43,6 +43,6 @@ Keep working to meet the specified tests.  If you need more clarification on wha
 specific requirement in SpecRunner.html and it will show you the mocha tests that need to pass.  
 ![Expanded requirement](http://i.imgur.com/fhd377j.png)
 
-Keep coding away and you'll start to see some green.  Eventually you'll have a SpecRunner.html that looks like this:
+Keep coding away and you'll start to see some green.  Eventually you'll have a SpecRunner.html that looks like this:  
 ![Passing tests](http://i.imgur.com/SBgl9hR.png)  
 and then you should have successfully implemented a bloom filter!
