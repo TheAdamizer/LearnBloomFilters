@@ -12,7 +12,7 @@ For more information on them check out [my blog post](http://blog.adamv.io/Learn
  If you find that this not enough information to fully implement a bloom filter, feel free to drop me a line and request some
  clarification and I'll do my best to update the post with the new details.
  
- ### How do I use this repo?
+### How do I use this repo?
  First of all, fork this repo and clone it to your local machine (or just simply clone it directly if you don't want to use git
  to keep track of your progress).
  Open up SpecRunner.html in a browser and initially you're going to see a lot of red.  These are your failing tests that you 
