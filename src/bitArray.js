@@ -1,3 +1,11 @@
+/*
+  Author: Adam Van Antwerp
+  Date Created: 3/31/2015
+  Last Modification: 4/9/2015
+  Description: This implements a simple BitArray class for doing bitwise
+    storing and manipulation.
+*/
+
 var BitArray = function(length) {
   //The length of the desired bit array.
   this.length = length;
@@ -49,6 +57,30 @@ BitArray.prototype.flipOn = function(idx) {
   //Now, the magic happens.  To 'turn on' the desired bit, we do a bitwise
   //OR against the current 8 bit integer in the calculated index.
   this._uint8[index] = this._uint8[index] | mask;
+};
+
+BitArray.prototype.flipOff = function(idx) {
+  //Use calculateIndex to determine the desired bitwise index.
+  var index = this.calculateIndex(idx);
+
+  //Use generate mask, then subtract it from 255  to make a mask to flip
+  //off the bit.
+  var mask = 255 - this.generateMask(idx);
+
+  //Now and the current integer with the generated mask to flipp off the bit.
+  this._uint8[index] = this._uint8[index] & mask;
+};
+
+BitArray.prototype.toggle = function(idx) {
+  //Use calculateIndex to determine the desired bitwise index.
+  var index = this.calculateIndex(idx);
+
+  //Use generateMask to get the desired mask for bitwise manipulation.
+  var mask = this.generateMask(idx);
+
+  //To toggle the desired bit, we do a bitwise XOR against the integer with
+  //the mask.
+  this._uint8[index] = this._uint8[index] ^ mask;
 };
 
 BitArray.prototype.check = function(idx) {
